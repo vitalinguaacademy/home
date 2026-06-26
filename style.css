@@ -127,7 +127,7 @@
       
       .content-block { padding: 80px 80px 140px 160px; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; text-align: left; height: 100%; }
       .content-block h3 { font-family: var(--font-sans); font-size: clamp(12px, 1.5vw, 16px); color: var(--gold); text-transform: uppercase; letter-spacing: 6px; margin: 0 0 10px 0; font-weight: 700; }
-      .content-block h1 { font-family: var(--font-serif); font-size: clamp(32px, 5vw, 65px); color: var(--navy); margin: 0 0 5px 0; letter-spacing: 2px; }
+      .content-block h1 { font-family: var(--font-serif); font-size: clamp(32px, 5vw, 48px); color: var(--navy); margin: 0 0 5px 0; letter-spacing: 2px; }
       .content-block .script-text { font-family: var(--font-script); font-size: clamp(28px, 3.5vw, 42px); color: var(--gold); margin-bottom: 25px; }
       .content-block p { font-family: var(--font-sans); font-size: clamp(16px, 1.8vw, 20px); line-height: 1.6; color: var(--navy); max-width: 550px; margin: 0; font-weight: 400; }
       
