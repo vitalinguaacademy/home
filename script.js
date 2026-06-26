@@ -136,7 +136,7 @@
 
       function isInteractiveTarget(target) {
         if (!target || typeof target.closest !== 'function') return false;
-        const ignore = ['slider-dot', 'floating-btn', 'menu-item', 'close-btn', 'bottom-nav-item', 'circular-menu', 'hp-nav-item', 'lang-toggle', 'g-nav-arrow', 'g-nav-dot'];
+        const ignore = ['slider-dot', 'floating-btn', 'menu-item', 'close-btn', 'bottom-nav-item', 'circular-menu', 'hp-nav-item', 'lang-toggle', 'lang-toggle-top', 'g-nav-arrow', 'g-nav-dot'];
         return ignore.some(cls => target.closest('.' + cls));
       }
 
