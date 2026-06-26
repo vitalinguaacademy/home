@@ -24,7 +24,6 @@
         <a class="menu-item" onclick="jumpToSection(2); event.stopPropagation();" title="Inglés"><i class="fa-solid fa-earth-americas"></i></a>
         <a class="menu-item" onclick="jumpToSection(3); event.stopPropagation();" title="Español"><i class="fa-solid fa-language"></i></a>
         <a class="menu-item" onclick="jumpToSection(4); event.stopPropagation();" title="Programas"><i class="fa-solid fa-layer-group"></i></a>
-        <a class="menu-item lang-toggle" onclick="toggleLanguage(); event.stopPropagation();" id="lang-btn">EN</a>
       </menu>
     </div>
 
@@ -79,6 +78,7 @@
       <!-- PAGE 1: LA ACADEMIA -->
       <div class="page hidden-bottom" id="page-1" onclick="handleSectionClick(event, 1)">
         <div class="close-btn" onclick="jumpToSection(0)"><i class="fa-solid fa-house"></i></div>
+        <div class="lang-toggle-top" onclick="toggleLanguage()" id="lang-btn-top">EN</div>
         <div class="slider-container">
           <div class="slide active">
             <div class="split-container">
@@ -127,6 +127,7 @@
       <!-- PAGE 2: INGLÉS -->
       <div class="page hidden-bottom" id="page-2" onclick="handleSectionClick(event, 2)">
         <div class="close-btn" onclick="jumpToSection(0)"><i class="fa-solid fa-house"></i></div>
+        <div class="lang-toggle-top" onclick="toggleLanguage()" id="lang-btn-top">EN</div>
         <div class="slider-container">
           <div class="slide active">
             <div class="split-container">
@@ -175,6 +176,7 @@
       <!-- PAGE 3: ESPAÑOL -->
       <div class="page hidden-bottom" id="page-3" onclick="handleSectionClick(event, 3)">
         <div class="close-btn" onclick="jumpToSection(0)"><i class="fa-solid fa-house"></i></div>
+        <div class="lang-toggle-top" onclick="toggleLanguage()" id="lang-btn-top">EN</div>
         <div class="slider-container">
           <div class="slide active">
             <div class="split-container">
@@ -223,6 +225,7 @@
       <!-- PAGE 4: PROGRAMAS -->
       <div class="page hidden-bottom" id="page-4" onclick="handleSectionClick(event, 4)">
         <div class="close-btn" onclick="jumpToSection(0)"><i class="fa-solid fa-house"></i></div>
+        <div class="lang-toggle-top" onclick="toggleLanguage()" id="lang-btn-top">EN</div>
         <div class="slider-container">
           <div class="slide active">
             <div class="split-container">
