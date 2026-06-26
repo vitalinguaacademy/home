@@ -1,146 +1,40 @@
-      // ==========================================
-      // 1. THE DATA DICTIONARY
-      // ==========================================
-      const siteData = {
-        "hp_title": { "es": "VITALINGUA", "en": "VITALINGUA" },
-        "hp_subtitle": { "es": "ACADEMY™", "en": "ACADEMY™" },
-        "hp_tagline": { "es": "Comunica. Conecta. Confía.", "en": "Communicate. Connect. Trust." },
-        "hp_script": { "es": "Vive el Español.", "en": "Live Spanish." },
-        "hp_h_small_1": { "es": "APRENDIZAJE", "en": "PERSONALIZED" },
-        "hp_h_large": { "es": "ESPAÑOL", "en": "SPANISH" },
-        "hp_h_small_2": { "es": "PERSONALIZADO", "en": "LEARNING" },
-        "hp_box_1_text": { 
-          "es": "Para adultos que quieren <strong>aprender Español</strong> y usarlo con <strong>confianza en la vida real.</strong>",
-          "en": "For adults who want to <strong>learn Spanish</strong> and use it with <strong>confidence in real life.</strong>" 
-        },
-        "hp_box_2_title": { "es": "Comunicación Real", "en": "Real Communication" },
-        "hp_box_2_text": { 
-          "es": "Aprende Español para tener conversaciones auténticas desde el primer día.",
-          "en": "Learn Spanish to have authentic conversations from day one." 
-        },
-        "nav_1": { "es": "La Academia", "en": "The Academy" },
-        "nav_2": { "es": "Inglés", "en": "English" },
-        "nav_3": { "es": "Español", "en": "Spanish" },
-        "nav_4": { "es": "Programas", "en": "Programs" },
-        
-        // Page 1
-        "p1_s1_h3": { "es": "Vitalingua", "en": "Vitalingua" },
-        "p1_s1_h1": { "es": "Academia Boutique", "en": "Boutique Academy" },
-        "p1_s1_script": { "es": "Comunica. Conecta. Confía.", "en": "Communicate. Connect. Trust." },
-        "p1_s1_p": { 
-          "es": "<strong>Experiencia Comprobada:</strong><br><br>Especializada en la enseñanza personalizada de idiomas para adultos con más de 20 años de experiencia.",
-          "en": "<strong>Proven Experience:</strong><br><br>Specialized in personalized language teaching for adults with over 20 years of experience." 
-        },
-        "p1_s2_h3": { "es": "Metodología", "en": "Methodology" },
-        "p1_s2_h1": { "es": "Comunicación Real", "en": "Real Communication" },
-        "p1_s2_script": { "es": "Estándar MCER", "en": "CEFR Standard" },
-        "p1_s2_p": { 
-          "es": "Enfoque comunicativo centrado en el estudiante para el desarrollo simultáneo de fluidez y competencia intercultural.",
-          "en": "Student-centered communicative approach for the simultaneous development of fluency and intercultural competence." 
-        },
-        "p1_s3_h3": { "es": "Propuesta", "en": "Proposal" },
-        "p1_s3_h1": { "es": "Confianza Total", "en": "Total Confidence" },
-        "p1_s3_script": { "es": "Resultados Reales", "en": "Real Results" },
-        "p1_s3_p": { 
-          "es": "Ayudamos a nuestros estudiantes a comunicarse con seguridad, naturalidad y confianza en situaciones reales.",
-          "en": "We help our students communicate with security, naturalness, and confidence in real situations." 
-        },
-        
-        // Page 2
-        "p2_s1_h3": { "es": "Mercado", "en": "Market" },
-        "p2_s1_h1": { "es": "Profesionales", "en": "Professionals" },
-        "p2_s1_script": { "es": "Latinoamérica", "en": "Latin America" },
-        "p2_s1_p": { 
-          "es": "Diseñado para emprendedores y ejecutivos que necesitan inglés para su desarrollo profesional.",
-          "en": "Designed for entrepreneurs and executives who need English for their professional development." 
-        },
-        "p2_s2_h3": { "es": "Oportunidad", "en": "Opportunity" },
-        "p2_s2_h1": { "es": "Expansión Global", "en": "Global Expansion" },
-        "p2_s2_script": { "es": "Nuevas Fronteras", "en": "New Frontiers" },
-        "p2_s2_p": { 
-          "es": "El dominio del inglés abre puertas para negocios internacionales, trabajo remoto y estudios superiores.",
-          "en": "English proficiency opens doors for international business, remote work, and higher education." 
-        },
-        "p2_s3_h3": { "es": "Formato", "en": "Format" },
-        "p2_s3_h1": { "es": "Atención Premium", "en": "Premium Attention" },
-        "p2_s3_script": { "es": "Grupos Reducidos", "en": "Small Groups" },
-        "p2_s3_p": { 
-          "es": "Programas semipersonalizados y seguimiento continuo para garantizar una experiencia de aprendizaje superior.",
-          "en": "Semi-personalized programs and continuous monitoring to guarantee a superior learning experience." 
-        },
-        
-        // Page 3
-        "p3_s1_h3": { "es": "Audiencia", "en": "Audience" },
-        "p3_s1_h1": { "es": "Expatriados", "en": "Expatriates" },
-        "p3_s1_script": { "es": "Ciudadanos Globales", "en": "Global Citizens" },
-        "p3_s1_p": { 
-          "es": "Diseñado específicamente para jubilados, nómadas digitales y ejecutivos internacionales en Latinoamérica.",
-          "en": "Tailored specifically for retirees, digital nomads, and international executives living in Latin America." 
-        },
-        "p3_s2_h3": { "es": "Integración", "en": "Integration" },
-        "p3_s2_h1": { "es": "Vida Diaria", "en": "Daily Life" },
-        "p3_s2_script": { "es": "Transiciones sin problemas", "en": "Seamless Transitions" },
-        "p3_s2_p": { 
-          "es": "Domina el idioma necesario para la integración social, atención médica y actividades cotidianas.",
-          "en": "Master the language needed for social integration, healthcare, personal relationships, and everyday activities." 
-        },
-        "p3_s3_h3": { "es": "Método", "en": "Method" },
-        "p3_s3_h1": { "es": "Conversación Real", "en": "Real Conversation" },
-        "p3_s3_script": { "es": "Vive el Español", "en": "Live Spanish" },
-        "p3_s3_p": { 
-          "es": "Aprende Español para tener conversaciones auténticas y usarlo con confianza desde el primer día.",
-          "en": "Learn Spanish to have authentic conversations and use it with confidence from day one." 
-        },
-        
-        // Page 4
-        "p4_s1_h3": { "es": "Niveles", "en": "Levels" },
-        "p4_s1_h1": { "es": "Estructura A1 - B2", "en": "A1 - B2 Structure" },
-        "p4_s1_script": { "es": "Ruta de Aprendizaje", "en": "Learning Path" },
-        "p4_s1_p": { 
-          "es": "Cada nivel consta de 60 horas de clase más aprendizaje autónomo para dominar el idioma progresivamente.",
-          "en": "Each level consists of 60 hours of class plus autonomous learning to master the language progressively." 
-        },
-        "p4_s2_h3": { "es": "Inversión", "en": "Investment" },
-        "p4_s2_h1": { "es": "Grupos & Privado", "en": "Groups & Private" },
-        "p4_s2_script": { "es": "Planes Flexibles", "en": "Flexible Plans" },
-        "p4_s2_p": { 
-          "es": "Grupos boutique de 4 estudiantes por US$540 o coaching lingüístico privado premium por US$1,440.",
-          "en": "Boutique groups of 4 students for US$540 or premium private linguistic coaching for US$1,440." 
-        },
-        "p4_s3_h3": { "es": "Contacto", "en": "Contact" },
-        "p4_s3_h1": { "es": "Empieza Hoy", "en": "Start Today" },
-        "p4_s3_script": { "es": "Hablemos", "en": "Let's Talk" },
-        "p4_s3_p": { 
-          "es": "Contáctanos directamente vía WhatsApp al <strong>+507 69448878</strong> para comenzar tu camino hacia la fluidez.",
-          "en": "Contact us directly via WhatsApp at <strong>+507 69448878</strong> to start your journey towards fluency." 
-        }
-      };
+	// ==========================================
+	// 1 & 2. FETCH DATA & LANGUAGE RENDERER ENGINE
+	// ==========================================
+	let siteData = {};
+	let currentLang = 'en'; 
 
-      // ==========================================
-      // 2. LANGUAGE RENDERER ENGINE
-      // ==========================================
-      let currentLang = 'en'; 
+	// Fetch the JSON file dynamically
+	fetch('data.json')
+	  .then(response => response.json())
+	  .then(data => {
+		siteData = data;
+		// Render the initial language only AFTER data is successfully loaded
+		renderLanguage(currentLang); 
+	  })
+	  .catch(error => {
+		console.error("Error loading the language dictionary:", error);
+	  });
 
-      function renderLanguage(lang) {
-        currentLang = lang;
-        document.getElementById('lang-btn').innerText = lang === 'en' ? 'ES' : 'EN';
-        
-        document.querySelectorAll('[data-key]').forEach(el => {
-          const key = el.getAttribute('data-key');
-          if (siteData[key] && siteData[key][lang]) {
-            el.innerHTML = siteData[key][lang];
-          }
-        });
-      }
+	function renderLanguage(lang) {
+	  currentLang = lang;
+	  document.getElementById('lang-btn').innerText = lang === 'en' ? 'ES' : 'EN';
+	  
+	  document.querySelectorAll('[data-key]').forEach(el => {
+		const key = el.getAttribute('data-key');
+		if (siteData[key] && siteData[key][lang]) {
+		  el.innerHTML = siteData[key][lang];
+		}
+	  });
+	}
 
-      window.toggleLanguage = function() {
-        const newLang = currentLang === 'en' ? 'es' : 'en';
-        renderLanguage(newLang);
-      }
+	window.toggleLanguage = function() {
+	  const newLang = currentLang === 'en' ? 'es' : 'en';
+	  renderLanguage(newLang);
+	}
 
-      document.addEventListener('DOMContentLoaded', () => {
-        renderLanguage('en'); 
-      });
+	// Note: Removed the DOMContentLoaded listener calling renderLanguage('en') 
+	// because we now call it inside the fetch() promise above, guaranteeing data is ready.
 
       // ==========================================
       // 3. FULL NAVIGATION ENGINE & EVENT LISTENERS
