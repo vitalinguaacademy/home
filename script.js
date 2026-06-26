@@ -16,21 +16,30 @@
 		console.error("Error loading the language dictionary:", error);
 	  });
 
+	// NEW: Fixed translation function
+	window.toggleLanguage = function(event) {
+	  if (event) event.stopPropagation(); // Stop the click from triggering page slides
+	  
+	  currentLang = (currentLang === 'en') ? 'es' : 'en';
+	  renderLanguage(currentLang);
+	};
+
 	function renderLanguage(lang) {
 	  currentLang = lang;
-	  document.getElementById('lang-btn').innerText = lang === 'en' ? 'ES' : 'EN';
 	  
+	  // Find all language labels and update them
+	  const labels = document.querySelectorAll('#lang-label');
+	  labels.forEach(label => {
+		label.innerText = lang === 'en' ? '🇪🇸' : '🇬🇧';
+	  });
+	  
+	  // Render the text content
 	  document.querySelectorAll('[data-key]').forEach(el => {
 		const key = el.getAttribute('data-key');
 		if (siteData[key] && siteData[key][lang]) {
 		  el.innerHTML = siteData[key][lang];
 		}
 	  });
-	}
-
-	window.toggleLanguage = function() {
-	  const newLang = currentLang === 'en' ? 'es' : 'en';
-	  renderLanguage(newLang);
 	}
 
 	// Note: Removed the DOMContentLoaded listener calling renderLanguage('en') 
